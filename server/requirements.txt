@@ -2,5 +2,13 @@ fastapi
 uvicorn[standard]
 sqlalchemy
 psycopg2-binary
-
+pgvector
+pydantic-settings
+google-genai
 python-dotenv
+tiktoken
+yt-dlp
+youtube-transcript-api
+pytest
+pytest-mock
+httpx
