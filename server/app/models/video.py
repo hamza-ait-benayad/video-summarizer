@@ -27,3 +27,5 @@ class Video(Base):
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
     transcripts = relationship("Transcript", back_populates="video", cascade="all, delete-orphan")
+    summary = relationship("Summary", back_populates="video", uselist=False, cascade="all, delete-orphan")
+    chunks = relationship("VideoChunk", back_populates="video", cascade="all, delete-orphan")
